@@ -1,0 +1,39 @@
+{
+	"id": "node-logx",
+	"name": "node-logx",
+	"description": "node log operation",
+	"displayName": "node log operation",
+	"version": "1.0.0",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/xu1260114313/check-local-package/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xu1260114313/check-local-package.git"
+	},
+	"keywords": [
+		"log",
+		"node log",
+		"logx"
+	],
+	"categories": [
+		"Other"
+	],
+	"main": "./dist/main.js",
+	"scripts": {
+		"dev": "webpack -c webpack.dev.config.js",
+		"build": "webpack -c webpack.prod.config.js"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.26",
+		"ts-loader": "^9.2.8",
+		"vscode-nls-dev": "^4.0.0",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.5"
+	}
+}
