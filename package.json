@@ -6,11 +6,11 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/xu1260114313/check-local-package/issues"
+		"url": "https://github.com/xu1260114313/node-logx/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/xu1260114313/check-local-package.git"
+		"url": "git+https://github.com/xu1260114313/node-logx.git"
 	},
 	"keywords": [
 		"log",
