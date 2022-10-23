@@ -1,26 +1,29 @@
-### check-local-package
+### node-logx
 
-#### introduction
+#### introduction.
 
-Check whether the local node package exists.
+记录日志内容并查看.
 
-
-##### example for commonJS
+##### example
 ```javascript
-const checkPackage = require('check-local-package');
+const nodeLog = require('node-logx');
 /**
- * @param cwd Cwd is a Current Window Directory
- * @param packageName PackageName is package name(optional)
+ * @param dirName - 文件夹名称(默认: logs)
+ * @param prefix - 前缀
+ * @param subfix - 后缀
+ * @param format - 日期格式(默认: YYYY-MM-DD HH:mm:ss)
+ * @methods info 普通日志
+ * @methods warn 警告日志
+ * @methods error 错误日志
+ * @methods open 打开日志所存在的文件夹
  */
-checkPackage(cwd, packageName) // 
-```
+const log = new nodeLog(dirName, prefix, subfix, format);
 
-##### example for ts
-```typescript
-import * as checkPackage from 'check-local-package';
 /**
- * @param cwd Cwd is a Current Window Directory
- * @param packageName PackageName is package name(optional)
+ * @param printStr 输出的内容
  */
-checkPackage(cwd, packageName)
+log.info(printStr);
+log.warn(printStr);
+log.error(printStr);
+log.open();
 ```

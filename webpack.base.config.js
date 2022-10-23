@@ -1,24 +1,8 @@
 const path = require('path');
 
-const env = process.env;
-
 module.exports = {
-	entry: './src/main.ts',
+	entry: './src/main.js',
 	target: 'node',
-	module: {
-		rules: [{
-			test: /\.ts$/,
-			exclude: /node_modules/,
-			use: [
-				{
-					loader: 'ts-loader'
-				}
-			]
-		}]
-	},
-	resolve: {
-		extensions: ['.ts']
-	},
 	plugins: [],
 	externals: [],
 	node: {
